@@ -28,7 +28,7 @@ const Header = () => {
   //fetch image
 
   useEffect(() => {
-    const queryArray = ["ocean", "forest", "beach", "mountain", "frozen", "outdoors", "clouds", "night%20sky", "space", "universe"];
+    const queryArray = ["forest"];
 
     const fetchImage = async () => {
       const res = await fetch(`https://pexelsdimasv1.p.rapidapi.com/v1/search?query=${random_item(queryArray)}&per_page=20&orientation=landscape`, {
