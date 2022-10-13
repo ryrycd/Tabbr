@@ -7,12 +7,13 @@ const Quote = () => {
   const [quoteData, setQuoteData] = useState([]);
   const [quoteLoading, setQuoteLoading] = useState(true);
 
-  const request = require('request');
-  var category = 'environmental';
-request.get({
+  //fetch quote from api
+  const fetchQuote = require('fetchQuote');
+var category = 'happiness';
+fetchQuote.get({
   url: 'https://api.api-ninjas.com/v1/quotes?category=' + category,
   headers: {
-    'X-Api-Key': '7Fq2xYmUWimA2+a01DsGng==cETol46Awrl65Sw0'
+    'X-Api-Key': 'YOUR_API_KEY'
   },
 }, function(error, response, body) {
   if(error) return console.error('Request failed:', error);
