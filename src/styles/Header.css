@@ -1,0 +1,54 @@
+.body-container {
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  width: 100%;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+/* Gradient to add a dark overlay to text readability */
+.gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  min-height: -webkit-fill-available;
+  transition: 0.5s;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* background image  */
+.bg-image {
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  min-height: -webkit-fill-available;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: 0.3s;
+  background-color: black;
+  -webkit-background-size: cover;
+}
+
+@media screen and (max-width: 600px) {
+  .body-container {
+    top: 250px;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .body-container {
+    top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .subbody-container {
+    width: 350px;
+  }
+}

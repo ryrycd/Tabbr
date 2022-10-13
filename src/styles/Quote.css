@@ -1,0 +1,167 @@
+.quoteContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blockContainer {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.quoteBlock {
+  max-width: 60%;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.authorBlock {
+  transform: translate(-50%);
+}
+
+.hoverQuote {
+  padding-bottom: 20px;
+}
+
+.quote {
+  font-size: 18px;
+  margin-bottom: 0px;
+  transition: 0.3s;
+  padding: 5px 5px 0px 5px;
+  -webkit-text-size-adjust: 100%;
+}
+
+.slideUp {
+  transform: translateY(-12px);
+}
+
+.author {
+  font-size: 15px;
+  transition: 0.3s;
+  margin-bottom: 0px;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.author a {
+  margin-left: 5px;
+}
+
+.slideDownFadeIn {
+  transform: translateY(7px);
+  opacity: 1;
+  visibility: visible;
+}
+
+.TextSlideDownFadeIn {
+  transition: 0.3s;
+  opacity: 0.7;
+}
+
+.TextSlideDownFadeIn:hover {
+  opacity: 1;
+}
+
+.spinLoading {
+  font-size: 20px;
+  animation: rotationSetting 4s infinite linear;
+  position: absolute;
+  bottom: 10px;
+}
+
+.notLoaded {
+  opacity: 0;
+  visibility: none;
+}
+
+@keyframes rotationSetting {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .quoteContainer {
+    position: relative;
+  }
+
+  .hoverQuote {
+    padding-bottom: 0px;
+  }
+
+  .slideUp {
+    transform: none;
+  }
+
+  .slideDownFadeIn {
+    transform: none;
+  }
+
+  .quote {
+    font-size: 12px;
+    transform: translateY(-20px);
+    opacity: 1;
+  }
+
+  .author {
+    opacity: 1;
+    visibility: visible;
+    font-size: 12px;
+  }
+
+  .quoteBlock {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .authorBlock {
+    transform: translate(-50%);
+  }
+
+  .TextSlideDownFadeIn {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .slideUp {
+    transform: none;
+  }
+
+  .slideDownFadeIn {
+    transform: none;
+  }
+
+  .quote {
+    font-size: 11px;
+    transform: translateY(-20px);
+    opacity: 1;
+  }
+
+  .author {
+    opacity: 1;
+    visibility: visible;
+    font-size: 11px;
+  }
+
+  .quoteBlock {
+    width: 60%;
+    max-width: 60%;
+  }
+
+  .authorBlock {
+    transform: translate(-50%);
+  }
+
+  .TextSlideDownFadeIn {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,34 @@
+.bottom-row {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.bottom-left,
+.bottom-right {
+  width: 20%;
+  display: flex;
+}
+
+.bottom-center {
+  width: 60%;
+}
+
+@media screen and (max-width: 600px) {
+  .bottom-center {
+    order: 1;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .bottom-left {
+    order: 2;
+    width: 50%;
+  }
+  .bottom-right {
+    order: 3;
+    width: 50%;
+  }
+}
