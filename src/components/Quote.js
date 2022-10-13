@@ -7,19 +7,18 @@ const Quote = () => {
   const [quoteData, setQuoteData] = useState([]);
   const [quoteLoading, setQuoteLoading] = useState(true);
 
-  //fetch quote from api
-  const fetchQuote = async () => {
-    const res = await fetch("https://quotes15.p.rapidapi.com/quotes/random/", {
-      method: "GET",
-      headers: {
-        "x-rapidapi-key": process.env.REACT_APP_RAPID_KEY,
-        "x-rapidapi-host": "quotes15.p.rapidapi.com",
-      },
-    });
-    setQuoteLoading(false);
-    const data = await res.json();
-    return data;
-  };
+  const request = require('request');
+  var category = 'environmental';
+request.get({
+  url: 'https://api.api-ninjas.com/v1/quotes?category=' + category,
+  headers: {
+    'X-Api-Key': '7Fq2xYmUWimA2+a01DsGng==cETol46Awrl65Sw0'
+  },
+}, function(error, response, body) {
+  if(error) return console.error('Request failed:', error);
+  else if(response.statusCode != 200) return console.error('Error:', response.statusCode, body.toString('utf8'));
+  else console.log(body)
+});
 
   //shortens the quote if its too long
   const shortQuote = (e) => {
