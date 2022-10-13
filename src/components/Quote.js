@@ -8,9 +8,9 @@ const Quote = () => {
   const [quoteLoading, setQuoteLoading] = useState(true);
 
   //fetch quote from api
-  const fetchQuote = require('fetchQuote');
+  const request = require('request');
 var category = 'happiness';
-fetchQuote.get({
+request.get({
   url: 'https://api.api-ninjas.com/v1/quotes?category=' + category,
   headers: {
     'X-Api-Key': 'YOUR_API_KEY'
@@ -31,7 +31,7 @@ fetchQuote.get({
 
   useEffect(() => {
     const getQuotes = async () => {
-      const quoteFromApi = await fetchQuote();
+      const quoteFromApi = await request();
       setQuoteData(quoteFromApi);
     };
 
