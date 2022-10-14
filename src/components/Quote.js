@@ -7,16 +7,20 @@ const Quote = () => {
   const [quoteData, setQuoteData] = useState([]);
   const [quoteLoading, setQuoteLoading] = useState(true);
 
-  //fetch quote from array
+  //fetch quote from api
+  const fetchQuote = async () => {
+    const res = await fetch("https://quotes15.p.rapidapi.com/quotes/random/", {
+      method: "GET",
+      headers: {
+        "x-rapidapi-key": process.env.REACT_APP_RAPID_KEY,
+        "x-rapidapi-host": "quotes15.p.rapidapi.com",
+      },
+    });
+    setQuoteLoading(false);
+    const data = await res.json();
+    return data;
+  };
 
-const TreeQuotes = ['Howdy', 'Bonjour', 'Hello', 'Dude']
-
-const fetchQuote = TreeQuotes[  
-  Math.floor(Math.random() * TreeQuotes.length)
-]
-
-console.log(`${greeting} Marcus`)
-  
   //shortens the quote if its too long
   const shortQuote = (e) => {
     if (e.length > 250) {
@@ -46,7 +50,7 @@ console.log(`${greeting} Marcus`)
                 </p>
               )}
               <div className={`quote ${hoverQuote ? "slideUp" : ""} ${quoteLoading ? "" : "fadeInAnim"} `}>
-                {quoteLoading === false && <p>"{quoteData && quoteData.content && shortQuote(quoteData.content)}"</p>}
+                {quoteLoading === false && <p>"Poop"</p>}
               </div>
             </div>
           </div>
