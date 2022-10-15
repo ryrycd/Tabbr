@@ -8,10 +8,7 @@ const Quote = () => {
   const [quoteLoading, setQuoteLoading] = useState(true);
 
    //Quotes
-const greetings = ['Over 2 billion people’s livelihoods depend on forests.', 'Forests are home to 300 million people around the world.', 'Trees planted sequester CO2 at an average of 25 kilos per tree per year; or an average of 250 kilos over a tree’s lifetime.', 'There are more than 60,000 tree species in the world.'];
 
-const greeting = "Test greeting using variable";
-  
   
   //fetch quote from api
   const fetchQuote = () => {
@@ -26,13 +23,7 @@ const greeting = "Test greeting using variable";
         "url": "https://www.ecomatcher.com/tree-resources//"
     },
     "tags": [
-        "Life",
-        "Freedom",
-        "Fight",
-        "day",
-        "die",
-        "prison",
-        "prisoner"
+        "Trees",
     ]
 };
     setQuoteLoading(false);
