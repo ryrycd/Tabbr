@@ -21,7 +21,7 @@ console.log(`${greeting}`)
     const data = {
     "id": 0,
     "language_code": "en",
-    "content":`${greeting}`,
+    "content": "Over 2 billion people’s livelihoods depend on forests.",
     "url": "https://www.ecomatcher.com/tree-resources/",
     "originator": {
         "id": 0,
