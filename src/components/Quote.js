@@ -50,7 +50,7 @@ const Quote = () => {
                 </p>
               )}
               <div className={`quote ${hoverQuote ? "slideUp" : ""} ${quoteLoading ? "" : "fadeInAnim"} `}>
-                <p>"Hello"</p>
+                {quoteLoading === false && <p>"{quoteData && quoteData.content && shortQuote(quoteData.content)}"</p>}
               </div>
             </div>
           </div>
