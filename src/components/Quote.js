@@ -8,18 +8,30 @@ const Quote = () => {
   const [quoteLoading, setQuoteLoading] = useState(true);
 
   //fetch quote from api
-  const fetchQuote = async () => {
-    const res = await fetch("https://quotes15.p.rapidapi.com/quotes/random/", {
-      method: "GET",
-      headers: {
-        "x-rapidapi-key": process.env.REACT_APP_RAPID_KEY,
-        "x-rapidapi-host": "quotes15.p.rapidapi.com",
-      },
-    });
+  const fetchQuote = () => {
+    const res = 'Some Quote.';
     setQuoteLoading(false);
-    const data = await res.json()
     console.log(data);
-    return data;
+    return {
+    "id": 0,
+    "language_code": "en",
+    "content": "Better to die fighting for freedom then be a prisoner all the days of your life.",
+    "url": "https://www.ecomatcher.com/tree-resources/",
+    "originator": {
+        "id": 0,
+        "name": "Ryan C",
+        "url": "https://www.ecomatcher.com/tree-resources//"
+    },
+    "tags": [
+        "Life",
+        "Freedom",
+        "Fight",
+        "day",
+        "die",
+        "prison",
+        "prisoner"
+    ]
+};
   };
 
   //shortens the quote if its too long
