@@ -9,10 +9,7 @@ const Quote = () => {
 
   //fetch quote from api
   const fetchQuote = () => {
-    const res = 'Some Quote.';
-    setQuoteLoading(false);
-    console.log(data);
-    return {
+    const data = {
     "id": 0,
     "language_code": "en",
     "content": "Better to die fighting for freedom then be a prisoner all the days of your life.",
@@ -32,6 +29,9 @@ const Quote = () => {
         "prisoner"
     ]
 };
+    setQuoteLoading(false);
+    console.log(data);
+    return data;
   };
 
   //shortens the quote if its too long
