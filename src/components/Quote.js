@@ -12,7 +12,6 @@ const greetings = ['Over 2 billion people’s livelihoods depend on forests.', '
 
 const greeting = "Test greeting using variable";
   
-console.log(`${greeting} Marcus`)   
   
   //fetch quote from api
   const fetchQuote = () => {
@@ -38,6 +37,7 @@ console.log(`${greeting} Marcus`)
 };
     setQuoteLoading(false);
     console.log(data);
+    console.log(`${greeting} Marcus`)
     return data;
   };
 
