@@ -37,7 +37,6 @@ const greeting = "Test greeting using variable";
 };
     setQuoteLoading(false);
     console.log(data);
-    console.log(greeting);
     return data;
   };
 
