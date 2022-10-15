@@ -19,6 +19,7 @@ const Quote = () => {
     setQuoteLoading(false);
     const data = await res.json();
     return data;
+    console.log(data)
   };
 
   //shortens the quote if its too long
