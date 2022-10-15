@@ -72,7 +72,7 @@ console.log(`${greeting}`)
                 </p>
               )}
               <div className={`quote ${hoverQuote ? "slideUp" : ""} ${quoteLoading ? "" : "fadeInAnim"} `}>
-                {quoteLoading === false && <p>"{quoteData && quoteData.content && shortQuote(quoteData.content)}"</p>}
+                {quoteLoading === false && <p>{quoteData && quoteData.content && shortQuote(quoteData.content)}</p>}
               </div>
             </div>
           </div>
