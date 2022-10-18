@@ -16,12 +16,13 @@ const Quote = () => {
 
 const months = ["January", "February", "March", "April", "May", "June", "July"];
 
-const RandomQuote = Math.floor(Math.random() * months.length);
+const random = Math.floor(Math.random() * months.length);
+console.log(random, months[random]);
     
     const data = {
     "id": 0,
     "language_code": "en",
-    "content": RandomQuote,
+    "content": random,
     "url": "https://www.ecomatcher.com/tree-resources/",
     "originator": {
         "id": 0,
