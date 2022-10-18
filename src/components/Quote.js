@@ -9,21 +9,22 @@ const Quote = () => {
 
    //Quotes
 
+  
+  const months = ["January", "February", "March", "April", "May", "June", "July"];
 
+const random = Math.floor(Math.random() * months.length);
+console.log(random, months[random]);
+  
   //fetch quote from api
   const fetchQuote = () => {
  const QuoteName = "We love trees! 2";
 
-const months = ["January", "February", "March", "April", "May", "June", "July"];
 
-const random = Math.floor(Math.random() * months.length);
-console.log(random, months[random]);
-    var RandomQuote = random;
     
     const data = {
     "id": 0,
     "language_code": "en",
-    "content": RandomQuote,
+    "content": "tabbr",
     "url": "https://www.ecomatcher.com/tree-resources/",
     "originator": {
         "id": 0,
