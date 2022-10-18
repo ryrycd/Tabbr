@@ -12,10 +12,11 @@ const Quote = () => {
   
   //fetch quote from api
   const fetchQuote = () => {
+    var QuoteName = "We love trees!";
     const data = {
     "id": 0,
     "language_code": "en",
-    "content": "Over 2 billion people’s livelihoods depend on forests.",
+    "content": QuoteName,
     "url": "https://www.ecomatcher.com/tree-resources/",
     "originator": {
         "id": 0,
