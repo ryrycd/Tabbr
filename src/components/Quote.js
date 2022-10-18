@@ -9,7 +9,7 @@ const Quote = () => {
 
    //Quotes
 
- var QuoteName = "We love trees! 2";
+ const QuoteName = "We love trees! 2";
 
   //fetch quote from api
   const fetchQuote = () => {
