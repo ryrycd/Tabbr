@@ -23,7 +23,7 @@ console.log(random, months[random]);
     const data = {
     "id": 0,
     "language_code": "en",
-    "content": random,
+    "content": RandomQuote,
     "url": "https://www.ecomatcher.com/tree-resources/",
     "originator": {
         "id": 0,
