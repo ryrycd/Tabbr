@@ -15,7 +15,7 @@ const Quote = () => {
   //fetch quote from api
   const fetchQuote = () => {
 
-     const months = ["Hello", "Good day", "bruh", "bruh moment];
+     const months = ["Hello", "Good day", "bruh", "bruh moment"];
 
 var random = Math.floor(Math.random() * months.length);
     var RandomQuote = (random, months[random])
