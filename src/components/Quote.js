@@ -15,15 +15,15 @@ const Quote = () => {
   //fetch quote from api
   const fetchQuote = () => {
 
-     const months = ["Hello", "Good day"];
+     const months = ["Hello", "Good day", "bruh", "bruh moment];
 
 var random = Math.floor(Math.random() * months.length);
     var RandomQuote = (random, months[random])
 
-    if (RandomQuote === "Hello") {
-console.log("it's hello");
+    if (RandomQuote === "Hello" || "Good day") {
+console.log("it's hello or good day");
 } else {
-console.log("it's good day");
+console.log("it's bruh");
 }
     
     
