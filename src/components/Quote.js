@@ -20,76 +20,76 @@ var random = Math.floor(Math.random() * months.length);
     var RandomQuote = (random, months[random])
 
     if (RandomQuote === "Over 2 billion people’s livelihoods depend on forests.") {
-var QuoteSource = "https://www.ecomatcher.com/tree-resources/"
+const QuoteSource = "https://www.ecomatcher.com/tree-resources/"
 }
     
        if (RandomQuote === "Forests are home to 300 million people around the world.") {
-var QuoteSource = "https://www.ecomatcher.com/tree-resources/"
+const QuoteSource = "https://www.ecomatcher.com/tree-resources/"
 }
     if (RandomQuote === "Trees planted sequester CO2 at an average of 25 kilos per tree per year; or an average of 250 kilos over a tree’s lifetime.") {
-var QuoteSource = "https://www.ecomatcher.com/tree-resources/"
+const QuoteSource = "https://www.ecomatcher.com/tree-resources/"
 }
     
     if (RandomQuote === "There are more than 60,000 species of trees in the world.") {
-var QuoteSource = "https://www.ecomatcher.com/tree-resources/"
+const QuoteSource = "https://www.ecomatcher.com/tree-resources/"
 }
     
    if (RandomQuote === "More than a quarter of modern medicines originate from tropical forest plants.") {
-var QuoteSource = "https://www.ecomatcher.com/tree-resources/"
+const QuoteSource = "https://www.ecomatcher.com/tree-resources/"
 }
        if (RandomQuote === "Forests are home to 80% of the world’s terrestrial biodiversity.") {
-var QuoteSource = "https://www.ecomatcher.com/tree-resources/"
+const QuoteSource = "https://www.ecomatcher.com/tree-resources/"
 }
        if (RandomQuote === "Tropical deforestation contributes 20% of annual global green-house pas emissions.") {
-var QuoteSource = "https://www.ecomatcher.com/tree-resources/"
+const QuoteSource = "https://www.ecomatcher.com/tree-resources/"
 }
        if (RandomQuote === "13 million forests provide jobs to more than 13 million people across the world.") {
-var QuoteSource = "https://www.ecomatcher.com/tree-resources/"
+const QuoteSource = "https://www.ecomatcher.com/tree-resources/"
 }
        if (RandomQuote === "80% of Europe used to be forested land, but only 34% of it remains today.") {
-var QuoteSource = "https://www.ecomatcher.com/tree-resources/"
+const QuoteSource = "https://www.ecomatcher.com/tree-resources/"
 }
        if (RandomQuote === "40% of the world’s oxygen is produced from rainforest.") {
-var QuoteSource = "https://www.ecomatcher.com/tree-resources/"
+const QuoteSource = "https://www.ecomatcher.com/tree-resources/"
 }
        if (RandomQuote === "Forests support over 86 million green jobs and the livelihoods of millions of other. More than 90% of those who live in extreme poverty are forest-dependent.") {
-var QuoteSource = "https://www.ecomatcher.com/tree-resources/"
+const QuoteSource = "https://www.ecomatcher.com/tree-resources/"
 }
        if (RandomQuote === "25% of our carbon emissions have historically been captured by Earth’s forests, farms, and grasslands to keep the landscapes vegetates and soil hydrated.") {
-var QuoteSource = "https://www.ecomatcher.com/tree-resources/"
+const QuoteSource = "https://www.ecomatcher.com/tree-resources/"
 }
        if (RandomQuote === "Trees are the longest living organisms on Earth, and never die of old age.") {
-var QuoteSource = "https://www.precisiontreemn.com/tips/14-fun-facts-about-trees.html"
+const QuoteSource = "https://www.precisiontreemn.com/tips/14-fun-facts-about-trees.html"
 }
       if (RandomQuote === "Tree rings can help predict climate change.") {
-var QuoteSource = "https://www.precisiontreemn.com/tips/14-fun-facts-about-trees.html"
+const QuoteSource = "https://www.precisiontreemn.com/tips/14-fun-facts-about-trees.html"
 }
     if (RandomQuote === "Strategically planting trees and shrubs to maximize shade can save you up to 25% on your electricity bills.") {
-var QuoteSource = "https://www.precisiontreemn.com/tips/14-fun-facts-about-trees.html"
+const QuoteSource = "https://www.precisiontreemn.com/tips/14-fun-facts-about-trees.html"
 }
     if (RandomQuote === "NASA took tree seeds to the moon during the Apollo 14 mission in 1971, testing to see if space’s orbit could change tree growth.") {
-var QuoteSource = "https://www.precisiontreemn.com/tips/14-fun-facts-about-trees.html"
+const QuoteSource = "https://www.precisiontreemn.com/tips/14-fun-facts-about-trees.html"
 }
     if (RandomQuote === "Trees are able to communicate with each other, and can signal danger to other trees when being attacked so they can start their own defense.") {
-var QuoteSource = "https://www.precisiontreemn.com/tips/14-fun-facts-about-trees.html"
+const QuoteSource = "https://www.precisiontreemn.com/tips/14-fun-facts-about-trees.html"
 }
     if (RandomQuote === "Trees can defend themselves against attacking insect by releasing certain chemicals that make their leaves harder to digest.") {
-var QuoteSource = "https://www.precisiontreemn.com/tips/14-fun-facts-about-trees.html"
+const QuoteSource = "https://www.precisiontreemn.com/tips/14-fun-facts-about-trees.html"
 }
     if (RandomQuote === "Leaves, twigs, and branches on trees absorb and deflect sound waves to mask unwanted noise, through a process called sound attenuation.") {
-var QuoteSource = "https://www.precisiontreemn.com/tips/14-fun-facts-about-trees.html"
+const QuoteSource = "https://www.precisiontreemn.com/tips/14-fun-facts-about-trees.html"
 }
     if (RandomQuote === "Forests help lower our stress, as trees release chemicals called phytoncides. When we breathe them in, it can reduce blood pressure, lower anxiety levels, and increase our pain threshold.") {
-var QuoteSource = "https://www.precisiontreemn.com/tips/14-fun-facts-about-trees.html"
+const QuoteSource = "https://www.precisiontreemn.com/tips/14-fun-facts-about-trees.html"
 }
     if (RandomQuote === "Tree rings are natural compasses - if you’re in the northern hemisphere, you can see the rings of the tree grow slightly thicker on the southern side since it receives more light.") {
-var QuoteSource = "https://www.precisiontreemn.com/tips/14-fun-facts-about-trees.html"
+const QuoteSource = "https://www.precisiontreemn.com/tips/14-fun-facts-about-trees.html"
 }
     if (RandomQuote === "Several recent nationwide surveys show that mature trees in a well-landscaped yard can increase the value of a house by seven to 19 percent.") {
-var QuoteSource = "https://www.precisiontreemn.com/tips/14-fun-facts-about-trees.html"
+const QuoteSource = "https://www.precisiontreemn.com/tips/14-fun-facts-about-trees.html"
 }
     if (RandomQuote === "Trees prevent soil from eroding into our waterways, reduce stormwater runoff, and lessen flood damage.") {
-var QuoteSource = "https://www.precisiontreemn.com/tips/14-fun-facts-about-trees.html"
+const QuoteSource = "https://www.precisiontreemn.com/tips/14-fun-facts-about-trees.html"
 }
     
     
