@@ -9,14 +9,11 @@ const Quote = () => {
 
    //Quotes
 
- const QuoteName = "We love trees! 2";
 
   //fetch quote from api
   const fetchQuote = () => {
-    const Quotes = ['Howdy', 'Bonjour', 'Hello', 'Dude']
-const QuotePick = greetings[  
-  Math.floor(Math.random() * greetings.length)
-]
+ const QuoteName = "We love trees! 2";
+
     const data = {
     "id": 0,
     "language_code": "en",
