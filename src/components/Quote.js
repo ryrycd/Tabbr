@@ -13,10 +13,14 @@ const Quote = () => {
 
   //fetch quote from api
   const fetchQuote = () => {
+    const Quotes = ['Howdy', 'Bonjour', 'Hello', 'Dude']
+const QuotePick = greetings[  
+  Math.floor(Math.random() * greetings.length)
+]
     const data = {
     "id": 0,
     "language_code": "en",
-    "content": QuoteName,
+    "content": QuotePick,
     "url": "https://www.ecomatcher.com/tree-resources/",
     "originator": {
         "id": 0,
