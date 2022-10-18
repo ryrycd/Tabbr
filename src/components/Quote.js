@@ -22,8 +22,6 @@ var random = Math.floor(Math.random() * months.length);
 
     if (RandomQuote === "Hello" || "Good day") {
 console.log("it's hello or good day");
-} else {
-console.log("it's bruh");
 }
     
     
