@@ -20,7 +20,7 @@ const Quote = () => {
 var random = Math.floor(Math.random() * months.length);
     var RandomQuote = (random, months[random])
 
-    if (RandomQuote == "Hello") {
+    if (RandomQuote === "Hello") {
 console.log("it's hello");
 } else {
 console.log("it's good day");
