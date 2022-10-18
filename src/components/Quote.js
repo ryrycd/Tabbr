@@ -9,10 +9,10 @@ const Quote = () => {
 
    //Quotes
 
-  
+ var QuoteName = "We love trees! 2";
+
   //fetch quote from api
   const fetchQuote = () => {
-    var QuoteName = "We love trees!";
     const data = {
     "id": 0,
     "language_code": "en",
