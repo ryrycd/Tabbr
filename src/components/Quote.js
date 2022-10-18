@@ -103,7 +103,7 @@ QuoteSource = "https://www.precisiontreemn.com/tips/14-fun-facts-about-trees.htm
     "originator": {
         "id": 0,
         "name": "EcoMatcher",
-        "url": "https://www.ecomatcher.com/tree-resources//"
+        "url": QuoteSource,
     },
     "tags": [
         "Trees",
