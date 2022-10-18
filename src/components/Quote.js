@@ -14,7 +14,6 @@ const Quote = () => {
   
   //fetch quote from api
   const fetchQuote = () => {
- const QuoteName = "We love trees! 2";
 
      const months = ["January", "February", "March", "April", "May", "June", "July"];
 
@@ -25,7 +24,7 @@ console.log(random, months[random]);
     const data = {
     "id": 0,
     "language_code": "en",
-    "content": QuoteName,
+    "content": random,
     "url": "https://www.ecomatcher.com/tree-resources/",
     "originator": {
         "id": 0,
