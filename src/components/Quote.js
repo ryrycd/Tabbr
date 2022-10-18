@@ -20,10 +20,16 @@ const Quote = () => {
 var random = Math.floor(Math.random() * months.length);
     var RandomQuote = (random, months[random])
 
-    if (RandomQuote === "Hello"||"Good day") {
-console.log("it's hello or good day");
+    if (RandomQuote === "Hello") {
+console.log("it's hello");
 }
     
+       if (RandomQuote === "Good day") {
+console.log("it's good day");
+}
+    if (RandomQuote === "bruh") {
+console.log("it's bruh");
+}
     
     const data = {
     "id": 0,
