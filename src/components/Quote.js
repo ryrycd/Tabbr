@@ -39,8 +39,7 @@ QuoteSource = "https://www.ecomatcher.com/tree-resources/";
     "url": QuoteSource,
     "originator": {
         "id": 0,
-        "name": QuoteName;
-      
+        "name": QuoteName,
         "url": QuoteSource,
     },
     "tags": [
