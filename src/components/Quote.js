@@ -26,9 +26,10 @@ QuoteSource = "https://www.ecomatcher.com/tree-resources/";
       QuoteName = "ecomatcher.com";
 } else if (RandomQuote === "Trees are the longest living organisms on Earth, and never die of old age." ^ "Tree rings can help predict climate change." ^ "Strategically planting trees and shrubs to maximize shade can save you up to 25% on your electricity bills." ^ "NASA took tree seeds to the moon during the Apollo 14 mission in 1971, testing to see if space's orbit could change tree growth." ^ "Trees are able to communicate with each other, and can signal danger to other trees when being attacked so they can start their own defense." ^ "Trees can defend themselves against attacking insect by releasing certain chemicals that make their leaves harder to digest." ^ "Leaves, twigs, and branches on trees absorb and deflect sound waves to mask unwanted noise, through a process called sound attenuation." ^ "Forests help lower our stress, as trees release chemicals called phytoncides. When we breathe them in, it can reduce blood pressure, lower anxiety levels, and increase our pain threshold." ^ "Tree rings are natural compasses - if you're in the northern hemisphere, you can see the rings of the tree grow slightly thicker on the southern side since it receives more light." ^ "Several recent nationwide surveys show that mature trees in a well-landscaped yard can increase the value of a house by seven to 19 percent." ^ "Trees prevent soil from eroding into our waterways, reduce stormwater runoff, and lessen flood damage.") {
   QuoteSource = "https://www.precisiontreemn.com/tips/14-fun-facts-about-trees.html";
-      QuoteName = "Precision Trees";
+      QuoteName = "Precision Trees2";
 } else { 
-QuoteName = "Failed";
+QuoteName = "Precision Trees";
+  QuoteSource = "https://www.precisiontreemn.com/tips/14-fun-facts-about-trees.html";
 }
    
     
