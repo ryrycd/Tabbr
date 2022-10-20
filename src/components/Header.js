@@ -28,7 +28,7 @@ const Header = () => {
   //fetch image
 
   useEffect(() => {
-    const queryArray = ["forest", "trees", "tree"];
+    const queryArray = ["forest", "trees", "tree", "leaves", "leaf", "plant", "plants"];
 
     const fetchImage = async () => {
       const res = await fetch(`https://pexelsdimasv1.p.rapidapi.com/v1/search?query=${random_item(queryArray)}&per_page=20&orientation=landscape`, {
