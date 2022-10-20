@@ -86,7 +86,7 @@ const Header = () => {
 
   const centerBottomComponent = <Quote />;
 
-  const rightBottomComponent = <Todo />;
+  const rightBottomComponent = <ToDo />;
 
   const leftTopComponent = (
     <span style={{ display: "flex", width: "100%" }}>
