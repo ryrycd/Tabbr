@@ -28,7 +28,7 @@ const Header = () => {
   //fetch image
 
   useEffect(() => {
-    const queryArray = ["forest"];
+    const queryArray = ["forest", "trees", "tree"];
 
     const fetchImage = async () => {
       const res = await fetch(`https://pexelsdimasv1.p.rapidapi.com/v1/search?query=${random_item(queryArray)}&per_page=20&orientation=landscape`, {
@@ -86,7 +86,7 @@ const Header = () => {
 
   const centerBottomComponent = <Quote />;
 
-  const rightBottomComponent = <ToDo />;
+  const rightBottomComponent = <Todo />;
 
   const leftTopComponent = (
     <span style={{ display: "flex", width: "100%" }}>
