@@ -93,7 +93,7 @@ const Todo = () => {
           type="text"
           className="todo-input todo-content"
           value={value}
-          placeholder="New Todo"
+          placeholder="New To-Do"
           onChange={(e) => setValue(e.target.value)}
         />
       </form>
