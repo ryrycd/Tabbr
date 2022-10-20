@@ -103,7 +103,7 @@ const Todo = () => {
   return (
     <div className="todoContainer">
       <p className="todo-btn" onClick={() => setShowBubble(!showBubble)}>
-        <i className="fa fa-list-ul" aria-hidden="true"></i> Todo
+        <i className="fa fa-list-ul" aria-hidden="true"></i> To-Do
       </p>
       <TextBubble bubbleClassName={`speech-bubble bottom-speech-bubble todo-bubble ${showBubble ? "bottom-bubble-show" : ""}`}>
         <div>
