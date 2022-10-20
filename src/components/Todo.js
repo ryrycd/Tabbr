@@ -109,7 +109,7 @@ const Todo = () => {
         <div>
           <div className="todo-header">
             <h3 className="todo-content">
-              Todo<i className="fa fa-pencil todo-content" aria-hidden="true"></i>
+              To-Do<i className="fa fa-pencil todo-content" aria-hidden="true"></i>
             </h3>
           </div>
           <div className="todo-list">
@@ -117,9 +117,9 @@ const Todo = () => {
               todos.map((todo, index) => <Todo key={index} index={index} todo={todo} completeTodo={completeTodo} removeTodo={removeTodo} />)
             ) : (
               <div className="no-todo-container">
-                <p className="todo-content">Add a todo to get started</p>
+                <p className="todo-content">Add a to-do to get started</p>
                 <button className="no-todo-btn" onClick={() => focusInput.focus()}>
-                  New Todo
+                  New To-Do
                 </button>
               </div>
             )}
