@@ -91,7 +91,7 @@ const MainFocus = () => {
           onMouseOver={() => setFadeGoalHover(true)}
           onMouseOut={() => setFadeGoalHover(false)}
         >
-          <p>Today's Goal</p>
+          <p>Today's Goal:</p>
           <div className="todayGoalContainer">
             <label className={`checkmarkContainer ${fadeGoalHover ? "fadeIn" : ""}`}>
               <input type="checkbox" onClick={completeGoal} />
