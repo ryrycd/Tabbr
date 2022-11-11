@@ -9,10 +9,16 @@ const Weather = () => {
 
   //gets the current location from geolocation and uses the lat and lon values as parameters for obtaining weather data
   const getWeather = async () => {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(async (position) => {
-        let latitude = position.coords.latitude.toFixed(4);
-        let longitude = position.coords.longitude.toFixed(4);
+    if ("21"==="21") {
+        $.getJSON('https://ipinfo.io/geo', function(response) { 
+        var loc = response.loc.split(',');
+        var coords = {
+            latitude: loc[0],
+            longitude: loc[1]
+        let latitude = loc[0];
+        let longitude = loc[0];
+          ];
+       
 
         const response = await fetch(
           `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.REACT_APP_OPENWEATHER_KEY}`
