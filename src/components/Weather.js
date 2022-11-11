@@ -19,7 +19,7 @@ const Weather = () => {
         script.onload = function() {
             var $ = window.jQuery;
           $(function() {
-            let apiKey = 'f8e0b361e8f4405c94613ab534959fdf';
+            let apiKey = '665888c05b154f19982134897ae167ba';
             $.getJSON('https://api.ipgeolocation.io/ipgeo?apiKey=' + apiKey, function(data) {
               console.log(JSON.stringify(data, null, 2));
             });
