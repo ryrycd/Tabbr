@@ -9,7 +9,7 @@ const Weather = () => {
   //gets the current location from geolocation and uses the lat and lon values as parameters for obtaining weather data
   const getWeather = async () => {
     if (2/2 === 1) {
-      (async (position) => {
+      navigator.geolocation.getCurrentPosition(async (position) => {
         let latitude = "1.3521";
         let longitude = "103.8198";
 
