@@ -3,7 +3,6 @@ import "../styles/Weather.css";
 import { useState, useEffect } from "react";
 
 const Weather = () => {
-  const [errorMsg, setErrorMsg] = useState("");
   const [weatherData, setWeatherData] = useState([]);
   const [weatherIcon, setWeatherIcon] = useState("");
 
@@ -66,7 +65,7 @@ const Weather = () => {
           <p className="weatherText">{weatherData.name}</p>
         </div>
       )}
-      <p className="weather-error-msg">{errorMsg}</p>
+      <p className="weather-error-msg">{}</p>
     </div>
   );
 };
