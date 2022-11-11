@@ -44,24 +44,7 @@ const Weather = () => {
         data && data.weather && setWeatherIcon(require(`../assets/${data.weather[0].icon}.png`).default);
   
 
-    function showError(error) {
-      switch (error.code) {
-        case error.PERMISSION_DENIED:
-          setErrorMsg("Enable location for Weather App");
-          break;
-        case error.POSITION_UNAVAILABLE:
-          setErrorMsg("Location is unavailable.");
-          break;
-        case error.TIMEOUT:
-          setErrorMsg("Location timed out");
-          break;
-        case error.UNKNOWN_ERROR:
-          setErrorMsg("An unknown error occurred.");
-          break;
-        default:
-          setErrorMsg("An unknown error occurred.");
-      }
-    }
+   
   };
 
   useEffect(() => {
