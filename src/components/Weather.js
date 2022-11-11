@@ -11,7 +11,22 @@ const Weather = () => {
   const getWeather = async () => {
 
 
-    
+    (function() {
+        // Load the script
+        var script = document.createElement("SCRIPT");
+        script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js';
+        script.type = 'text/javascript';
+        script.onload = function() {
+            var $ = window.jQuery;
+          $(function() {
+            let apiKey = 'f8e0b361e8f4405c94613ab534959fdf';
+            $.getJSON('https://api.ipgeolocation.io/ipgeo?apiKey=' + apiKey, function(data) {
+              console.log(JSON.stringify(data, null, 2));
+            });
+            });
+        };
+        document.getElementsByTagName("head")[0].appendChild(script);
+    })();
     
       navigator.geolocation.getCurrentPosition(async (position) => {
         let latitude = position.coords.latitude.toFixed(4);
