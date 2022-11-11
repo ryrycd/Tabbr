@@ -21,9 +21,9 @@ const Weather = () => {
           $(function() {
             let apiKey = '665888c05b154f19982134897ae167ba';
             $.getJSON('https://api.ipgeolocation.io/ipgeo?apiKey=' + apiKey, function(data) {
-              let latitude = (JSON.stringify(data.latitude, null, 2));
-              let longitude = (JSON.stringify(data.longitude, null, 2));
-              console.log(longitude);
+              var IPLatitude = (JSON.stringify(data.latitude, null, 2));
+              var IPLongitude = (JSON.stringify(data.longitude, null, 2));
+              console.log(IPLatitude);
             });
             });
         };
