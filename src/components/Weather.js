@@ -22,6 +22,7 @@ const Weather = () => {
             let apiKey = '665888c05b154f19982134897ae167ba';
             $.getJSON('https://api.ipgeolocation.io/ipgeo?apiKey=' + apiKey, function(data) {
               console.log(JSON.stringify(data, null, 2));
+              console.log(JSON.stringify(data.latitude, null, 2));
             });
             });
         };
