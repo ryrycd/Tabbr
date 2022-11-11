@@ -15,9 +15,8 @@ const Weather = () => {
         var coords = {
             latitude: loc[0],
             longitude: loc[1]
-        let latitude = loc[0];
-        let longitude = loc[0];
-          ];
+  
+        };
        
 
         const response = await fetch(
