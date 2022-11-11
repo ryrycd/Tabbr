@@ -9,7 +9,8 @@ const Weather = () => {
 
   //gets the current location from geolocation and uses the lat and lon values as parameters for obtaining weather data
   const getWeather = async () => {
-    if (navigator.geolocation) {
+
+    
       navigator.geolocation.getCurrentPosition(async (position) => {
         let latitude = position.coords.latitude.toFixed(4);
         let longitude = position.coords.longitude.toFixed(4);
@@ -22,9 +23,6 @@ const Weather = () => {
 
         data && data.weather && setWeatherIcon(require(`../assets/${data.weather[0].icon}.png`).default);
       }, showError);
-    } else {
-      setErrorMsg("Geolocation is not supported by this browser.");
-    }
 
     function showError(error) {
       switch (error.code) {
