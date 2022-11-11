@@ -10,9 +10,7 @@ const Weather = () => {
   //gets the current location from geolocation and uses the lat and lon values as parameters for obtaining weather data
   const getWeather = async () => {
 
-    $.getJSON('https://ipinfo.io/json', function(data) {
-  console.log(JSON.stringify(data, null, 2));
-});
+
       navigator.geolocation.getCurrentPosition(async (position) => {
         let latitude = position.coords.latitude.toFixed(4);
         let longitude = position.coords.longitude.toFixed(4);
