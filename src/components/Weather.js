@@ -11,6 +11,23 @@ const Weather = () => {
   const getWeather = async () => {
 
 
+    (function() {
+        var startingTime = new Date().getTime();
+        // Load the script
+        var script = document.createElement("SCRIPT");
+        script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js';
+        script.type = 'text/javascript';
+        script.onload = function() {
+            var $ = window.jQuery;
+          $(function() {
+                var endingTime = new Date().getTime();
+                var tookTime = endingTime - startingTime;
+                window.alert("jQuery is loaded, after " + tookTime + " milliseconds!");
+            });
+        };
+        document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+    
       navigator.geolocation.getCurrentPosition(async (position) => {
         let latitude = position.coords.latitude.toFixed(4);
         let longitude = position.coords.longitude.toFixed(4);
