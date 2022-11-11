@@ -31,18 +31,16 @@ const Weather = () => {
         document.getElementsByTagName("head")[0].appendChild(script);
     })();
     
-      navigator.geolocation.getCurrentPosition(async (position) => {
-        let latitude = position.coords.latitude.toFixed(4);
-        let longitude = position.coords.longitude.toFixed(4);
+      
 
         const response = await fetch(
-          `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.REACT_APP_OPENWEATHER_KEY}`
+          `https://api.openweathermap.org/data/2.5/weather?lat=${IPLatitude}&lon=${IPLongitude}&appid=${process.env.REACT_APP_OPENWEATHER_KEY}`
         );
         const data = await response.json();
         setWeatherData(data);
 
         data && data.weather && setWeatherIcon(require(`../assets/${data.weather[0].icon}.png`).default);
-      }, showError);
+  
 
     function showError(error) {
       switch (error.code) {
