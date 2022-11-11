@@ -24,6 +24,7 @@ const Weather = () => {
               var IPLatitude = (JSON.stringify(data.latitude, null, 2));
               var IPLongitude = (JSON.stringify(data.longitude, null, 2));
               console.log(IPLatitude);
+              console.log(IPLongitude);
             });
             });
         };
