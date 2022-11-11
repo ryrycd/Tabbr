@@ -10,6 +10,8 @@ const Weather = () => {
   //gets the current location from geolocation and uses the lat and lon values as parameters for obtaining weather data
   const getWeather = async () => {
 
+    var IPLatitude = "";
+    var IPLongitude = "";
 
     (function() {
         // Load the script
