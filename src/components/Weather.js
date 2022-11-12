@@ -25,11 +25,7 @@ const Weather = () => {
       setErrorMsg("Geolocation is not supported by this browser.");
     }
 
-    function showError(error) {
-      switch (error.code) {
-  
-      }
-    }
+   
   };
 
   useEffect(() => {
