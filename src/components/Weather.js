@@ -10,26 +10,12 @@ const Weather = () => {
   const getWeather = async () => {
     if (2/2 === 1) {
 
-      (function() {
-        // Load the script
-        var script = document.createElement("SCRIPT");
-        script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js';
-        script.type = 'text/javascript';
-        script.onload = function() {
-            var $ = window.jQuery;
-          $(function() {
-            let apiKey = '665888c05b154f19982134897ae167ba';
-            $.getJSON('https://api.ipgeolocation.io/ipgeo?apiKey=' + apiKey, function(data) {
-              let latitude = (JSON.stringify(data.latitude, null, 2));
-              let longitude = (JSON.stringify(data.longitude, null, 2));
-              console.log(latitude);
-              console.log(longitude);
-            });
-            });
-        };
-        document.getElementsByTagName("head")[0].appendChild(script);
-    })();
+  fetch('http://example.com/movies.json')
+  .then((response) => response.json())
+  .then((data) => console.log(data));
      
+        let latitude = "1.3521";
+        let longitude = "103.8198";
 
         const response = await fetch(
           `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.REACT_APP_OPENWEATHER_KEY}`
