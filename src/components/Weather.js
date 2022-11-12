@@ -10,9 +10,7 @@ const Weather = () => {
   const getWeather = async () => {
     if (2/2 === 1) {
 
-  fetch('http://example.com/movies.json')
-  .then((response) => response.json())
-  .then((data) => console.log(data));
+
      
         let latitude = "1.3521";
         let longitude = "103.8198";
