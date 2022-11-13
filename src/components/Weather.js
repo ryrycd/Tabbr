@@ -19,10 +19,10 @@ const Weather = () => {
 
   
 
-        const response = await fetch(
+        const weatherResponse = await fetch(
           `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.REACT_APP_OPENWEATHER_KEY}`
         );
-        const data = await response.json();
+        const data = await weatherResponse.json();
         setWeatherData(data);
 
         data && data.weather && setWeatherIcon(require(`../assets/${data.weather[0].icon}.png`).default);
