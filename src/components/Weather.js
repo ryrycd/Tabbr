@@ -18,9 +18,7 @@ const Weather = () => {
       fetch('https://api.ipgeolocation.io/ipgeo?apiKey=665888c05b154f19982134897ae167ba')           //api for the get request
   .then(response => response.json())
   .then(data => setLatitude(data.latitude))
-  .then(data => setLongitude(data.latitude))
-  .then(console.log(latitude))
-  .then(console.log(longitude));
+  .then(data => setLongitude(data.latitude));
 
 
 
