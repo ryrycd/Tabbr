@@ -13,10 +13,15 @@ const Weather = () => {
 
       fetch('https://api.ipgeolocation.io/ipgeo?apiKey=665888c05b154f19982134897ae167ba')           //api for the get request
   .then(response => response.json())
-  .then(data => latitude, data.latitude);
+  .then(data => {
+    latitude = data.latitude;
+   })
+   .then(data => {
+    longitude = data.longitude;
+   })
+  .then(data => console.log(data.latitude));
 
-     
-      
+  
 
         const response = await fetch(
           `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.REACT_APP_OPENWEATHER_KEY}`
