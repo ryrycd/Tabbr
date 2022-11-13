@@ -46,7 +46,7 @@ var API = 'https://api.ipgeolocation.io/ipgeo?apiKey=665888c05b154f19982134897ae
 
   useEffect(() => {
     getWeather();
-  }, [API]);
+  }, [getWeather]);
 
   const kelvinToFarenheit = (k) => {
     return Math.round((k - 273.15).toFixed(2));
