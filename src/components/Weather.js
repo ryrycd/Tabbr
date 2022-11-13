@@ -22,8 +22,8 @@ const Weather = () => {
   .then(data => console.log(data.latitude));
 
      
-        let latitude = "42.6544";
-        let longitude = "-111.6047";
+        let latitude = data.latitude;
+        let longitude = data.longitude;
 
         const response = await fetch(
           `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.REACT_APP_OPENWEATHER_KEY}`
