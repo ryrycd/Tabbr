@@ -10,8 +10,7 @@ const Weather = () => {
   const getWeather = async () => {
     if (2/2 === 1) {
 
-      let latitude = "20.3306";
-      let longitude = "-88.4010";
+      
 
   //     fetch('https://api.ipgeolocation.io/ipgeo?apiKey=665888c05b154f19982134897ae167ba')           //api for the get request
   // .then(response => response.json())
@@ -26,8 +25,8 @@ const Weather = () => {
   setWeatherData(IPdata);
   console.log(IPdata.latitude);
   console.log(IPdata.longitude);
-
-  
+  let latitude = IPdata.latitude;
+  let longitude = IPdata.longitude;
 
         const weatherResponse = await fetch(
           `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.REACT_APP_OPENWEATHER_KEY}`
