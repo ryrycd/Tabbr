@@ -59,7 +59,6 @@ QuoteSource = "https://www.ecomatcher.com/tree-resources/";
     ]
 };
     setQuoteLoading(false);
-    console.log(data);
     return data;
   };
 
