@@ -6,14 +6,28 @@ const Weather = () => {
   const [errorMsg, setErrorMsg] = useState("");
   const [weatherData, setWeatherData] = useState([]);
   const [weatherIcon, setWeatherIcon] = useState("");
+
+var latitude;
+var longitude;
+
+
+  fetch('https://api.ipgeolocation.io/ipgeo?apiKey=665888c05b154f19982134897ae167ba')           //api for the get request
+  .then(response => response.json())
+  .then(data => {
+    latitude = data.latitude;
+   })
+   .then(data => {
+    longitude = data.longitude;
+   })
+  .then(data => console.log(data));
+  
+
+
   //gets the current location from geolocation and uses the lat and lon values as parameters for obtaining weather data
   const getWeather = async () => {
     if (2/2 === 1) {
 
-
-     
-        let latitude = "35.6506";
-        let longitude = "139.5407";
+      
 
         const response = await fetch(
           `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.REACT_APP_OPENWEATHER_KEY}`
