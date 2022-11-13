@@ -6,6 +6,12 @@ const Weather = () => {
   const [errorMsg, setErrorMsg] = useState("");
   const [weatherData, setWeatherData] = useState([]);
   const [weatherIcon, setWeatherIcon] = useState("");
+
+  fetch('https://api.ipgeolocation.io/ipgeo?apiKey=665888c05b154f19982134897ae167ba')           //api for the get request
+  .then(response => response.json())
+  .then(data => console.log(data));
+
+
   //gets the current location from geolocation and uses the lat and lon values as parameters for obtaining weather data
   const getWeather = async () => {
     if (2/2 === 1) {
