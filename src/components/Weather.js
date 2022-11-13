@@ -10,7 +10,7 @@ const Weather = () => {
 var latitude;
 var longitude;
 
-function getCoords() {
+
   fetch('https://api.ipgeolocation.io/ipgeo?apiKey=665888c05b154f19982134897ae167ba')           //api for the get request
   .then(response => response.json())
   .then(data => {
@@ -20,7 +20,6 @@ function getCoords() {
     longitude = data.longitude;
    })
   .then(data => console.log(data));
-}
   
 
 
@@ -46,8 +45,6 @@ function getCoords() {
   };
 
   useEffect(() => {
-    getCoords();
-    getWeather();
   }, []);
 
   const kelvinToFarenheit = (k) => {
