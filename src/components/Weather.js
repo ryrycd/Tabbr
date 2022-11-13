@@ -19,7 +19,7 @@ const Weather = () => {
   //  .then(data => {
   //   longitude = data.longitude;
   //  })
-  .then(data => console.log(data));
+  .then(data => console.log(data.latitude));
 
      
         let latitude = "42.6544";
