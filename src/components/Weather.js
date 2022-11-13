@@ -10,12 +10,6 @@ const Weather = () => {
   const getWeather = async () => {
     if (2/2 === 1) {
 
-      
-
-  //     fetch('https://api.ipgeolocation.io/ipgeo?apiKey=665888c05b154f19982134897ae167ba')           //api for the get request
-  // .then(response => response.json())
-  // .then(data => console.log(data.latitude));
-
 
   const IPResponse = await fetch(
     `https://api.ipgeolocation.io/ipgeo?apiKey=665888c05b154f19982134897ae167ba`
@@ -23,8 +17,6 @@ const Weather = () => {
 
   const IPdata = await IPResponse.json();
   setWeatherData(IPdata);
-  console.log(IPdata.latitude);
-  console.log(IPdata.longitude);
   let latitude = IPdata.latitude;
   let longitude = IPdata.longitude;
 
@@ -40,7 +32,7 @@ const Weather = () => {
       setErrorMsg("Geolocation is not supported by this browser.");
     }
 
-   
+
   };
 
   useEffect(() => {
