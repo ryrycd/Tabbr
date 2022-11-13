@@ -11,6 +11,16 @@ const Weather = () => {
     if (2/2 === 1) {
 
 
+      fetch('https://api.ipgeolocation.io/ipgeo?apiKey=665888c05b154f19982134897ae167ba')           //api for the get request
+  .then(response => response.json())
+  // .then(data => {
+  //   latitude = data.latitude;
+  //  })
+  //  .then(data => {
+  //   longitude = data.longitude;
+  //  })
+  .then(data => console.log(data));
+
      
         let latitude = "35.6762";
         let longitude = "139.6503";
