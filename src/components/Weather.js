@@ -24,15 +24,15 @@ var longitude;
 
 
   //gets the current location from geolocation and uses the lat and lon values as parameters for obtaining weather data
-  const getWeather = async () => {
+
     if (2/2 === 1) {
 
       
 
-        const response = await fetch(
+        const response = fetch(
           `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.REACT_APP_OPENWEATHER_KEY}`
         );
-        const data = await response.json();
+        const data = response.json();
         setWeatherData(data);
 
         data && data.weather && setWeatherIcon(require(`../assets/${data.weather[0].icon}.png`).default);
@@ -42,7 +42,7 @@ var longitude;
     }
 
    
-  };
+
 
   useEffect(() => {
   }, []);
