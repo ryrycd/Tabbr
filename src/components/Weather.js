@@ -13,9 +13,19 @@ const Weather = () => {
       let latitude = "20.3306";
       let longitude = "-88.4010";
 
-      fetch('https://api.ipgeolocation.io/ipgeo?apiKey=665888c05b154f19982134897ae167ba')           //api for the get request
-  .then(response => response.json())
-  .then(data => console.log(data.latitude));
+  //     fetch('https://api.ipgeolocation.io/ipgeo?apiKey=665888c05b154f19982134897ae167ba')           //api for the get request
+  // .then(response => response.json())
+  // .then(data => console.log(data.latitude));
+
+
+  const IPResponse = await fetch(
+    `https://api.ipgeolocation.io/ipgeo?apiKey=665888c05b154f19982134897ae167ba`
+  );
+
+  const IPdata = await IPResponse.json();
+  setWeatherData(IPdata);
+  console.log(IPdata.latitude);
+  console.log(IPdata.longitude);
 
   
 
