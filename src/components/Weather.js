@@ -10,8 +10,8 @@ const Weather = () => {
 var latitude;
 var longitude;
 
-
-  fetch('https://api.ipgeolocation.io/ipgeo?apiKey=665888c05b154f19982134897ae167ba')           //api for the get request
+var API = 'https://api.ipgeolocation.io/ipgeo?apiKey=665888c05b154f19982134897ae167ba';
+  fetch(API)           //api for the get request
   .then(response => response.json())
   .then(data => {
     latitude = data.latitude;
@@ -46,7 +46,7 @@ var longitude;
 
   useEffect(() => {
     getWeather();
-  }, [response]);
+  }, [API]);
 
   const kelvinToFarenheit = (k) => {
     return Math.round((k - 273.15).toFixed(2));
