@@ -9,16 +9,16 @@ const Weather = () => {
 
 var latitude;
 var longitude;
-
 var API = 'https://api.ipgeolocation.io/ipgeo?apiKey=665888c05b154f19982134897ae167ba';
+
   fetch(API)           //api for the get request
   .then(response => response.json())
-  .then(data => {
-    latitude = data.latitude;
-   })
-   .then(data => {
-    longitude = data.longitude;
-   })
+  // .then(data => {
+  //   latitude = data.latitude;
+  //  })
+  //  .then(data => {
+  //   longitude = data.longitude;
+  //  })
   .then(data => console.log(data));
   
 
@@ -46,7 +46,7 @@ var API = 'https://api.ipgeolocation.io/ipgeo?apiKey=665888c05b154f19982134897ae
 
   useEffect(() => {
     getWeather();
-  }, [getWeather]);
+  }, []);
 
   const kelvinToFarenheit = (k) => {
     return Math.round((k - 273.15).toFixed(2));
