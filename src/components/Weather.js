@@ -10,12 +10,12 @@ const Weather = () => {
   const getWeather = async () => {
     if (2/2 === 1) {
 
-      let latitude = "20.3306";
-      let longitude = "-88.4010";
+      let latitude = "0";
+      let longitude = "0";
 
       fetch('https://api.ipgeolocation.io/ipgeo?apiKey=665888c05b154f19982134897ae167ba')           //api for the get request
   .then(response => response.json())
-  .then(data => console.log(data.latitude));
+  .then(response => console.log(response.data.latitude));
 
   
 
