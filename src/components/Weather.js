@@ -46,7 +46,7 @@ var longitude;
 
   useEffect(() => {
     getWeather();
-  }, []);
+  }, [response]);
 
   const kelvinToFarenheit = (k) => {
     return Math.round((k - 273.15).toFixed(2));
