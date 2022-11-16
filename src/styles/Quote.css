@@ -27,7 +27,8 @@
 }
 
 .quote {
-  font-size: 22px;
+  font-size: 20px;
+  font-weight: 700;
   margin-bottom: 0px;
   transition: 0.3s;
   padding: 5px 5px 0px 5px;
@@ -39,7 +40,7 @@
 }
 
 .author {
-  font-size: 18px;
+  font-size: 16px;
   transition: 0.3s;
   margin-bottom: 0px;
   opacity: 0;
